@@ -1,0 +1,8 @@
+python detect.py --source 0 --weights="weights/yolov5s.pt"
+
+python train.py --img 640 --data data/test.yaml --cfg models/test.yaml --weights weights/yolov5s.pt  --batch-size 16 --epochs 100
+
+python train.py --img 640 --data data/coco128.yaml --cfg models/yolov5s.yaml --weights/yolov5s.pt --workers 0 --batch-size 16 --epochs 100
+
+python train.py --img 640 --data data/test.yaml --cfg models/test.yaml --weights weights/yolov5s.pt --batch-size 16 --epochs 100
+
